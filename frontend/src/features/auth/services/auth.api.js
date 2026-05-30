@@ -32,9 +32,7 @@ export async function login({email, password}){
 export async function logout(){
     try{
 
-        const response = await axios.get("/http://localgost:5000/api/auth/logout",{
-            withCredentials: true
-        })
+        const response = await api.get("/api/auth/logout");
 
         return response.data;
 
@@ -46,9 +44,7 @@ export async function logout(){
 export async function getme(){
     try{
 
-        const response = await axios.get("/http://localgost:5000/api/auth/getme",{
-            withCredentials: true
-        })
+        const response = await api.get("/api/auth/getme");
 
         return response.data;
 

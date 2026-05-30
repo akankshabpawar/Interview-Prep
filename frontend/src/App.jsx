@@ -10,7 +10,6 @@ function App() {
     <>
     <AuthProvider>
       <AppRoutes/>
-      welcome
     </AuthProvider>
       
     </>
