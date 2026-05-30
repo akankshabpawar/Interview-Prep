@@ -1,0 +1,41 @@
+backend 
+
+app.js -> entry point, DB connection
+src/server.js -> all routes & middleware
+
+src/config/database.js -> DB connection
+
+src/models/tokenBlackList.js
+src/models/user.js
+
+src/routes/auth
+src/routes/ai
+
+src/controller/auth.js
+src/controller/ai.js
+
+src/middleware/authmiddleware.js -> to get current logged in user by token decode it using jwt.verify and find user from user model by decoded token store it in req.user so get me controller can access it from req object
+
+bcrypt -> to hash password before storing
+jwtwebtoken -> to generate tokenBlackList -> payload-secret-expiresin
+cookie-parser -> set current user in cookie -> res.cookie("token", token)
+
+
+Frontend 
+
+4 layer Architecture
+
+UI = ui
+-> components
+-> pages
+
+HOOKS = manages state and api layers
+-> hooks 
+
+STATE = data access data/ data store
+-> auth.context.jsx
+-> ai.context.jsx
+
+API = communiates with backrned
+-> services
+    -> auth.api.jsx

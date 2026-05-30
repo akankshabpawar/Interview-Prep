@@ -1,0 +1,20 @@
+import { useState } from 'react'
+import AppRoutes from './AppRoutes'
+import { AuthProvider } from './features/auth/services/auth.context'
+
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+    <AuthProvider>
+      <AppRoutes/>
+      welcome
+    </AuthProvider>
+      
+    </>
+  )
+}
+
+export default App
