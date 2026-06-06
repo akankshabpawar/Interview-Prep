@@ -142,7 +142,7 @@ async function getmeUser(req, res){
         message: "user details fetched successfully",
         user: {
             id: userInfo._id,
-            user: userInfo.username,
+            username: userInfo.username,
             email: userInfo.email
         }
     })

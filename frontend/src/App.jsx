@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import AppRoutes from './AppRoutes'
-import { AuthProvider } from './features/auth/services/auth.context'
+import { AuthProvider } from './features/auth/services/auth.context.jsx'
+import {Interviewprovider} from './features/ai/interview.context.jsx'
 
 
 function App() {
@@ -9,7 +10,9 @@ function App() {
   return (
     <>
     <AuthProvider>
-      <AppRoutes/>
+      <Interviewprovider>
+        <AppRoutes/>
+      </Interviewprovider>
     </AuthProvider>
       
     </>

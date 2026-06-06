@@ -6,6 +6,7 @@ const app = express();
 
 // import all route from routes
 import authRouter from "./routes/auth.routes.js";
+import interviewRouter from "./routes/interview.routes.js";
 
 // configs
 app.use(express.json());
@@ -17,6 +18,7 @@ app.use(cors({
 }))
 
 app.use("/api/auth", authRouter); //all auth routes define in auth.routes file
+app.use("/api/interview", interviewRouter);
 
 
 export default app;

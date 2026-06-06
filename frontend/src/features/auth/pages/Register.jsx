@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../authForm.scss'
 import { Link ,Navigate, useNavigate} from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
+import Loading from '../../../layout/Loading'
 
 const Register = () => {
   const navigate = useNavigate();
@@ -15,12 +16,12 @@ const Register = () => {
 
     e.preventDefault();
     await handleRegister({username, email, password});
-    navigate("/");
+    navigate("/home");
 
   }
 
   if(loading){
-    return(<p> Loading.............</p>)
+    return <Loading/>
   }
   
   return (

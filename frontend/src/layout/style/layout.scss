@@ -1,0 +1,127 @@
+.app{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.navbar {
+  height: 60px;
+  padding: 0 3rem;
+  background: #181c25;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+ 
+
+  .logo-section{
+
+    display: flex;
+
+    .icon{
+        color: #f8b03c;
+        font-size: 1.8rem;
+        margin: 0 1rem;
+    }
+    .logo {
+        margin: 0;
+        color: #f8b03c;
+        font-size: 1.8rem;
+    }
+
+  }
+
+  .user-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .username {
+      font-weight: 500;
+    }
+
+    .logout-btn {
+      padding: 0.6rem 1rem;
+      border: none;
+      border-radius: 6px;
+      background: #f8b03c;
+      color: #181c25;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .username {
+    font-size: 0.9rem;
+  }
+
+  .logout-btn {
+    padding: 0.5rem 0.8rem;
+  }
+}
+
+main {
+  flex: 1;
+}
+
+.footer {
+     margin-top: auto;
+  background: #181c25;
+  color: #ffffff;
+  padding: 1rem 2rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  border-top: 1px solid rgba(248, 176, 60, 0.2);
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 1.5rem;
+
+    a {
+      color: #f8b03c;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: 0.2s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+
+    .footer-links {
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

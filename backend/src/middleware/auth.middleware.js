@@ -34,4 +34,4 @@ async function getmeMiddleware(req, res, next){
 
 }
 
-export { getmeMiddleware }
+export default getmeMiddleware

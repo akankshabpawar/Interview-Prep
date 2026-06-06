@@ -3,8 +3,7 @@ import dotenv from "dotenv";
 import connectToDb from "./src/config/database.js";
 
 dotenv.config();
-connectToDb()
-
+connectToDb();
 
 app.get("/", (req, res)=>{
     res.send("hello");

@@ -1,0 +1,77 @@
+const resume = `
+Name: Rahul Sharma
+Email: [rahul.sharma@example.com]
+Phone: +91 98765 43210
+Location: Pune, Maharashtra
+
+SUMMARY
+Recent Computer Science graduate with strong foundations in JavaScript, React, Node.js, and SQL. Built several full-stack projects and completed internships focused on web development. Passionate about creating scalable and user-friendly applications.
+
+EDUCATION
+Bachelor of Engineering in Computer Science
+ABC Institute of Technology
+2022 - 2026
+CGPA: 8.5/10
+
+SKILLS
+
+JavaScript
+React.js
+Node.js
+Express.js
+MongoDB
+SQL
+Git & GitHub
+REST APIs
+
+EXPERIENCE
+Frontend Developer Intern
+TechNova Solutions
+Jan 2026 - Apr 2026
+
+Developed reusable React components.
+Integrated REST APIs with frontend applications.
+Improved page load performance by 20%.
+Collaborated with designers and backend developers.
+
+PROJECTS
+
+Expense Tracker
+
+Built a full-stack expense management application using React, Node.js, and MongoDB.
+Implemented JWT authentication and expense analytics dashboard.
+
+Task Manager
+
+Created a task management application with role-based access control.
+Designed REST APIs and responsive UI.`
+
+const selfIntroduction = `
+Hello, i am rahul sharma I worked on reusable components and API integration. I enjoy solving problems, learning new technologies, and collaborating with teams to buildme is Rahul Sharma. I recently completed my Bachelor's degree in Computer Science. During my academic journey, I developed a strong interest in web development and built multiple projects using React, Node.js, and MongoDB. I also completed a frontend development internship w impactful products. I am currently looking for an opportunity as a Software Engineer where I can contribute while continuing to grow my technical skills.`
+
+const jobDescription = `
+Position: Junior React Developer
+
+Responsibilities:
+
+* Develop responsive web applications using React.js.
+* Build reusable UI components.
+* Integrate frontend applications with REST APIs.
+* Collaborate with designers and backend developers.
+* Debug and optimize application performance.
+
+Requirements:
+
+* Bachelor's degree in Computer Science or related field.
+* Knowledge of JavaScript, HTML, CSS, and React.js.
+* Familiarity with Git and REST APIs.
+* Understanding of responsive design principles.
+* Good communication and teamwork skills.
+
+Preferred:
+
+* Experience with Node.js and MongoDB.
+* Knowledge of TypeScript.
+* Experience with state management libraries.`
+
+ export{resume, selfIntroduction, jobDescription}
