@@ -35,20 +35,20 @@ const Home = () => {
     }
     else{
 
-      console.log({jobDescription, resume, selfDescription});
+      // console.log({jobDescription, resume, selfDescription});
       
       const response = await generateReport({resume, selfDescription, jobDescription });
-      console.log(response);
+      // console.log(response);
       navigate(`/report/${response._id}`);
     }  
   }
 
   async function handleClick(interviewId){
-    console.log(interviewId);
+    // console.log(interviewId);
     const response = await getReport(interviewId);
-    console.log(response);
+    // console.log(response);
     navigate(`/report/${interviewId}`)
-    console.log("======================")
+    // console.log("======================")
   }
 
   return (

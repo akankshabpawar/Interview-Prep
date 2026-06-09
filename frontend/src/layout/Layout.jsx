@@ -12,7 +12,7 @@ const{user, loading, handleLogout} = useAuth();
 if(loading){
     return (<h1>Loading...........</h1>)
 }
-console.log(user);
+// console.log(user);
 
 async function handleClick(){
     const data = await handleLogout();

@@ -24,7 +24,7 @@ export const useInterview = () => {
         try{
             response = await generateInterviewReport({resume, selfDescription, jobDescription});
             setReport(response.interviewReportData);
-            console.log(response.interviewReportData);
+            // console.log(response.interviewReportData);
         }catch(err){
             console.log(err);
         }finally{
@@ -40,7 +40,7 @@ export const useInterview = () => {
         try{
             response = await getReportsById(interviewId );
             setReport(response.InterviewReport);
-            console.log(response.InterviewReport);
+            // console.log(response.InterviewReport);
         }catch(err){
             console.log(err);
         }finally{
@@ -56,7 +56,7 @@ export const useInterview = () => {
         try{
             response = await getAllReportsByUserId();
             setAllReports(response.allReports);
-            console.log(response.allReports);
+            // console.log(response.allReports);
         }catch(err){
             console.log(err);
         }finally{

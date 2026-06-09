@@ -30,7 +30,7 @@ const Report = () => {
     if(!report){
         return(<h1> No Data Found </h1>)
     }
-    console.log(report);
+    // console.log(report);
 
   return (
     <div className='container'>
@@ -77,7 +77,7 @@ const Report = () => {
 
             <section className='down-section'>
 
-                <h1> Technical Questions <div onClick={()=>{setShowTechnical(!showTechnical); console.log(showTechnical)}}> {showTechnical ? "-" : "+"} </div></h1>
+                <h1> Technical Questions <div onClick={()=>{setShowTechnical(!showTechnical)}}> {showTechnical ? "-" : "+"} </div></h1>
 
                 {showTechnical && (
                     <div className="technical">
@@ -90,7 +90,7 @@ const Report = () => {
                         ))}
                     </div>)}
 
-                <h1> Bhavioral Questions <div onClick={()=>{setShowBehavioral(!showBehavioral); console.log(showBehavioral)}}> + </div></h1>
+                <h1> Bhavioral Questions <div onClick={()=>{setShowBehavioral(!showBehavioral)}}> + </div></h1>
 
                 {showBehavioral && ( 
                     <div className="behavioral">
@@ -104,7 +104,7 @@ const Report = () => {
                     </div>)}
 
 
-                <h1> Prepration Plan <div onClick={()=>{setShowPrepPlan(!showPrepPlan); console.log(showPrepPlan)}}> +</div></h1>
+                <h1> Prepration Plan <div onClick={()=>{setShowPrepPlan(!showPrepPlan)}}> +</div></h1>
 
                 {showPrepPlan && (
                     <div className="plan">
